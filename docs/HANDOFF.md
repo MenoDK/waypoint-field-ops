@@ -17,9 +17,8 @@ The open rows are in [CHECKLIST.md](CHECKLIST.md) and are things this repository
 
 ## 3. What the owner does now
 
-- Read the first CI run on GitHub and fix anything that only fails there.
 - Ask a native speaker to read the Hindi, Bengali, Urdu and Arabic overlays (`site/i18n/`); they are machine-quality.
-- Decide whether to make the repository public (nothing in it names an origin project; `scripts/scan-all.sh` in the workspace is the check).
+- Decide whether to make the repository public: run a secret scan over the full history first (`gitleaks git .`).
 
 ## 4. Deadlines
 

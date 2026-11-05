@@ -16,7 +16,7 @@ _What_ and _when_. The _how_ belongs in a task's own notes, with `path:line` evi
 | 10  | Trip state table, compare-and-set, signed links                              | done   | [ADR 0009](adr/0009-trips-and-signed-links.md), `test/trips.e2e-spec.ts`           |
 | 11  | Boundaries: fleet from the token, `404` for foreign objects, deny by default | done   | [ADR 0010](adr/0010-boundaries.md), `test/security.e2e-spec.ts`                    |
 | 12  | Mutation check: every critical rule guarded                                  | done   | `make mutate`: 22/22 caught (see HANDOFF for the run that proves it)               |
-| 13  | Landing page and lab, 14 languages, strict CSP, WCAG A/AA                    | done   | `e2e/tests/`, `scripts/check-i18n.mjs` in the workspace                            |
+| 13  | Landing page and lab, 14 languages, strict CSP, WCAG A/AA                    | done   | `e2e/tests/` (landing, lab, 14 languages, axe), `site/i18n/`                       |
 | 14  | CI on GitHub: all jobs green                                                 | done   | first run: all six jobs green (quality, database, mutation, docker, e2e, security) |
 | 15  | Native-speaker review of the machine-quality translations (hi, bn, ur, ar)   | todo   | n/a                                                                                |
 | 16  | Run the ingest against real devices and a real routing engine                | todo   | n/a: everything here is simulated, and the README says so                          |
