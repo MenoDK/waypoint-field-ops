@@ -1,0 +1,12 @@
+dist
+node_modules
+coverage
+pnpm-lock.yaml
+*.sql
+site/vendor
+e2e/test-results
+e2e/playwright-report
+site/kit.js
+site/kit.css
+site/i18n/ui.js
+site/transcripts.js

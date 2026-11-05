@@ -1,0 +1,13 @@
+# Only a PostGIS for `pnpm test:e2e` (the tests migrate it and arrange their own fleets in it).
+services:
+  db:
+    image: postgis/postgis:17-3.5
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: waypoint
+    ports: ['127.0.0.1:15450:5432']
+    tmpfs: [/var/lib/postgresql/data]
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres -d waypoint']
+      interval: 2s
+      retries: 30
