@@ -249,7 +249,7 @@ connect as `app_user`; only the one-shot `migrate` job receives the schema-owner
 - **The queue planner is greedy** by priority, arrival order and station load. It is not an optimal scheduler.
 - **Tenancy is by condition and composite key, not row-level security.** RLS is a reasonable second layer.
 - **A leaked signed link works until it expires** (five minutes by default); it is not single-use.
-- **GitHub Actions has been linted but may not yet have run on GitHub** when you read this; the badge above is the truth.
+- **The first run of the CI workflow passed all six jobs**, but that is one run on one day; the badge above is the truth.
 - **No Kubernetes, Terraform or Helm here.** The deployable unit is the Compose file; that is a choice of scope, not an omission.
 - The demo stack publishes loopback only. Do not expose it: the lab can reset data and break the router by design (ADR 0008).
 

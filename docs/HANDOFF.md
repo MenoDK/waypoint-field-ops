@@ -7,7 +7,7 @@ Rewrite this file at the end of every session. A fresh session must be able to r
 ## 1. What is live
 
 The whole system runs locally with `make demo` (Docker only): PostGIS, the API on `127.0.0.1:8400`, the worker, and the simulated field (phones and a road router) that drives two fictional fleets. The landing page is served by the API; the lab sits behind `LAB_MODE`.
-Nothing is deployed anywhere. The repository is pushed private; CI results are the badge in the README.
+Nothing is deployed anywhere. The repository is pushed private; the first CI run passed all six jobs, and later results are the badge in the README.
 
 ## 2. Where we stopped
 
